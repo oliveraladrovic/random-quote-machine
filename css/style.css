@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda+One&display=swap');
+
+:root {
+  --base-color: green;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--base-color);
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s linear;
+}
+
+#quote-box {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  color: var(--base-color);
+  padding: 20px;
+  position: relative;
+  transition: color 0.5s linear;
+}
+
+#text {
+  font-family: 'Merienda One', cursive;
+  font-size: 3rem;
+}
+
+#author {
+  text-align: right;
+  font-style: italic;
+}
+
+.fa-twitter-square {
+  font-size: 2.5rem;
+  color: var(--base-color);
+  transition: color 0.5s linear;
+}
+
+#new-quote {
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+  background-color: var(--base-color);
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.5s linear;
+}

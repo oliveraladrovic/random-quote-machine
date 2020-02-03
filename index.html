@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Random Quote Machine</title>
+    <script
+      src="https://kit.fontawesome.com/fc1b155e94.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="getNewQuote()">
+    <div id="quote-box">
+      <blockquote id="text"></blockquote>
+      <p id="author"></p>
+      <br />
+      <hr />
+      <br />
+      <a href="twitter.com/intent/tweet" id="tweet-quote"
+        ><i class="fab fa-twitter-square"></i
+      ></a>
+      <button id="new-quote" onclick="getNewQuote()">New Quote</button>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
